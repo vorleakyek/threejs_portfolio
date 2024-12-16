@@ -8,6 +8,8 @@ import { useMediaQuery } from 'react-responsive';
 import Loading from '../components/Loading';
 import { calculateSizes } from '../constants/index.js';
 import ReactLogo from '../components/ReactLogo';
+import HeroCamera from '../components/HeroCamera.jsx';
+import Button from '../components/Button.jsx';
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -73,18 +75,24 @@ const Hero = () => {
               scale={10}
               position={[4.1,-9.1, -5.5]}
               rotation={[-5.6,0.6,-6.3]} /> */}
-            <Model scale={sizes.deskScale} position={sizes.deskPosition} rotation={[-5.6, 0.6, -6.3]} />
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
+            <HeroCamera isMobile={isMobile}>
+              <Model scale={sizes.deskScale} position={sizes.deskPosition} rotation={[-5.6, 0.6, -6.3]} />
+            </HeroCamera>
 
             <group>
               <ReactLogo position={sizes.reactLogoPosition} />
             </group>
 
+            <ambientLight intensity={1} />
+            <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
-
-
         </Canvas>
+      </div>
+
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#about" className="w-fit">
+          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+        </a>
       </div>
     </section>
   )
