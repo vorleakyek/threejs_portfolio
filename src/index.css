@@ -38,6 +38,12 @@ body {
     @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
+  .bg-nav-bar {
+  /* background:linear-gradient(to right, #FFFFFF, #87CEFA) */
+  background-color: #219B9D;
+  /* background-color: #006A67; */
+}
+
   .text-gray_gradient {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
@@ -55,6 +61,10 @@ body {
     @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
   }
 
+  .btn-bg-color {
+    background: linear-gradient(to right, #4682B4, #1E90FF);
+  }
+
   /* hero section */
   .hero_tag {
     @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
@@ -62,7 +72,7 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-white rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-teal-700 bg-amber-50 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
   }
 
   .grid-headtext {
