@@ -9,8 +9,9 @@ const App = () => {
     <main className='max-w-7xl mx-auto'>
       <Navbar />
       <Hero />
-      <About />
       <Projects />
+      <About />
+
     </main>
   )
 }

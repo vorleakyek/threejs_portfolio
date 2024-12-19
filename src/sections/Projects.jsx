@@ -33,7 +33,7 @@ const Projects = () => {
     <section className="c-space my-20">
       <p className="head-text">My Selected Work</p>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full bg-yellow">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
             <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
@@ -71,11 +71,11 @@ const Projects = () => {
           </div>
 
           <div className="flex justify-between items-center mt-7">
-            <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
+            <button className="arrow-btn bg-teal-600" onClick={() => handleNavigation('previous')}>
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>
 
-            <button className="arrow-btn" onClick={() => handleNavigation('next')}>
+            <button className="arrow-btn bg-teal-600" onClick={() => handleNavigation('next')}>
               <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
             </button>
           </div>
