@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
@@ -12,9 +13,42 @@ const Contact = () => {
     setForm({...form, [name]: value})
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    //service_p0dz6hg
+
+    setLoading(true);
+
+
+    try {
+      emailjs.send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: 'Vorleak Yek',
+          from_email: form.email,
+          to_email: 'vorleakyek@gmail.com',
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+      );
+
+      setLoading(false);
+      alert('Your message has been sent!');
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      alert('Something went wrong!')
+    }
+
+
 
   }
 
@@ -28,6 +62,9 @@ const Contact = () => {
           <p className="text-lg text-white-600 mt-3">
             Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
             life, I’m here to help.
+          </p>
+          <p className="text-lg text-white-600 mt-3">
+            I'm always available to work extra hours and during weekend.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
