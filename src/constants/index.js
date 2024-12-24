@@ -58,12 +58,11 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
+    title: 'SwiftShip',
+    desc: 'A full-stack e-commerce web application with a simple and intuitive interface, designed to make product  browsing seamless.Users can easily add items to their cart and complete online payments for a smooth shopping experience.',
+    subdesc:'Node.js (Express), PostgreSQL, React.js, TypeScript, Tailwind, react- chatbot - kit, React - Router, AWS',
+    href: 'http://ec2-54-177-188-240.us-west-1.compute.amazonaws.com/',
+    texture: '/textures/project/swiftship.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#2A1816',
