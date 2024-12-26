@@ -3,6 +3,8 @@ import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
 
+//NOTE: Add education and publication
+
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
