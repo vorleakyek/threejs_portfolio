@@ -21,49 +21,15 @@ export const navLinks = [
   },
 ];
 
-export const clientReviews = [
-  {
-    id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-  },
-  {
-    id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-  },
-  {
-    id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-  },
-  {
-    id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  },
-];
 
 export const myProjects = [
   {
     title: 'SwiftShip',
-    desc: 'A full-stack e-commerce web application with a simple and intuitive interface, designed to make product  browsing seamless.Users can easily add items to their cart and complete online payments for a smooth shopping experience.',
-    subdesc:'Node.js (Express), PostgreSQL, React.js, TypeScript, Tailwind, react- chatbot - kit, React - Router, AWS',
+    desc: 'A full-stack e-commerce web application with a simple and intuitive interface, designed to make product browsing seamless. Users can easily add items to their cart and complete online payments for a smooth shopping experience.',
+    subdesc:'React, TypeScript, Node.js, PostgreSQL, Express, Tailwind, AWS',
     href: 'http://ec2-54-177-188-240.us-west-1.compute.amazonaws.com/',
     texture: '/textures/project/swiftship.mp4',
-    logo: '/assets/project-logo1.png',
+    logo: '/assets/swiftship-logo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -78,29 +44,33 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
         name: 'TypeScript',
         path: '/assets/typescript.png',
       },
       {
+        id: 3,
+        name: 'Node.js',
+        path: 'assets/nodejs.png',
+      },
+      {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'PostgreSQL',
+        path: '/assets/postgreSQL.jpg',
+      },
+      {
+        id: 5,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
       },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
+    title: 'MatchMaster',
+    desc: 'A full-stack Pokémon-themed matching card game app where users can log in and play across three difficulty levels. Players can choose from three different card cover designs and compete to secure a spot on the top five leaderboard for each level, showcasing the highest scores among all players.',
+    subdesc: 'React, TypeScript, Node.js, PostgreSQL, Express, AWS',
+    href: 'http://ec2-204-236-133-145.us-west-1.compute.amazonaws.com/sign-up',
+    texture: '/textures/project/matchMaster.mp4',
+    logo: '/assets/match-master-logo.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -115,28 +85,90 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
         name: 'TypeScript',
         path: '/assets/typescript.png',
       },
       {
+        id: 3,
+        name: 'Node.js',
+        path: 'assets/nodejs.png',
+      },
+      {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'PostgreSQL',
+        path: '/assets/postgreSQL.jpg',
       },
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'BoredNoMore',
+    desc: 'A front-end web application that helps users discover fun and exciting activities through a dynamic table of options and a random activity generator for spontaneous suggestions. Users can search, filter, and save their favorite activities for easy access.',
+    subdesc: 'HTML5, CSS3, JavaScript(ES6)',
+    href: 'https://vorleakyek.github.io/BoredNoMore/',
+    texture: '/textures/project/boredNoMore-project.mp4',
+    logo: '/assets/boredNoMore-logo.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'HTML5',
+        path: '/assets/html-logo.png',
+      },
+      {
+        id: 2,
+        name: 'CSS3',
+        path: 'assets/css-logo.png',
+      },
+      {
+        id: 3,
+        name: 'JavaScript',
+        path: '/assets/js-logo.png',
+      },
+    ],
+  },
+  {
+    title: 'Code Journal',
+    desc: 'A front-end web application designed for coders to document their daily coding journey. Users can create notes with a title, image, and detailed description, as well as edit or delete entries, offering a simple and organized way to track progress over time.',
+    subdesc: 'HTML5, CSS3, JavaScript(ES6)',
+    href: 'https://vorleakyek.github.io/code-journal/',
+    texture: '/textures/project/code-journal.mp4',
+    logo: '/assets/code-journal-logo.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'HTML5',
+        path: '/assets/html-logo.png',
+      },
+      {
+        id: 2,
+        name: 'CSS3',
+        path: 'assets/css-logo.png',
+      },
+      {
+        id: 3,
+        name: 'JavaScript',
+        path: '/assets/js-logo.png',
+      },
+    ],
+  },
+  {
+    title: 'Tic-Tac-Toe',
+    desc: 'A front-end tic-tac-toe game designed for two players to alternate turns selecting boxes on a 3x3 grid. The application features a reset option, allowing players to enjoy multiple rounds without refreshing the page. It tracks player moves, declares the winner, or ends in a draw, providing a simple yet engaging experience for continuous play.',
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
+      'React, JavaScript(ES6), CSS3',
+    href: 'https://vorleakyek.github.io/tic-tac-toe/',
+    texture: '/textures/project/tic-tac-toe.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
@@ -154,28 +186,22 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'JavaScript',
+        path: '/assets/js-logo.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'CSS3',
+        path: 'assets/css-logo.png',
       },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
+    title: 'Basic Calculator',
+    desc: 'A front-end basic calculator application that allows users to perform simple mathematical operations, including division, multiplication, subtraction, and addition. The app features a clean, user-friendly interface with clickable buttons for each operation and real-time display of inputs and results.',
+    subdesc:'HTML5, CSS3, JavaScript(ES6)',
+    href: 'https://vorleakyek.github.io/Basic_calculator/',
+    texture: '/textures/project/basic-calculator.mp4',
     logo: '/assets/project-logo4.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
@@ -186,63 +212,21 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'HTML5',
+        path: '/assets/html-logo.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'CSS3',
+        path: 'assets/css-logo.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'JavaScript',
+        path: '/assets/js-logo.png',
       },
     ],
-  },
-  {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
+  }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
