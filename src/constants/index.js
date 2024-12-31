@@ -70,7 +70,7 @@ export const myProjects = [
     subdesc: 'React, TypeScript, Node.js, PostgreSQL, Express, AWS',
     href: 'http://ec2-204-236-133-145.us-west-1.compute.amazonaws.com/sign-up',
     texture: '/textures/project/matchMaster.mp4',
-    logo: '/assets/project-logo2.png',
+    logo: '/assets/match-master-logo.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -106,7 +106,7 @@ export const myProjects = [
     subdesc: 'HTML5, CSS3, JavaScript(ES6)',
     href: 'https://vorleakyek.github.io/BoredNoMore/',
     texture: '/textures/project/boredNoMore-project.mp4',
-    logo: '/assets/project-logo1.png',
+    logo: '/assets/boredNoMore-logo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -137,7 +137,7 @@ export const myProjects = [
     subdesc: 'HTML5, CSS3, JavaScript(ES6)',
     href: 'https://vorleakyek.github.io/code-journal/',
     texture: '/textures/project/code-journal.mp4',
-    logo: '/assets/project-logo1.png',
+    logo: '/assets/code-journal-logo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
