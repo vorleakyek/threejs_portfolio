@@ -45,10 +45,10 @@ const Experience = () => {
                     <div className="work-content_bar" />
                   </div>
 
-                  <div className="sm:p-5 px-2 5 py-5">
-                    <p className="font-bold text-white-800">{name}</p>
-                    <p className="text-sm mb-5">{pos} -- {duration}</p>
-                    <p className="group-hover:text-white transition-all ease-in-out duration-500">
+                  <div className="sm:p-5 px-2 5 py-5 ">
+                    <p className="font-bold text-sky-900 group-hover:text-white transition-all ease-in-out duration-500">{name}</p>
+                    <p className="text-yellow-800 text-sm mb-5 group-hover:text-yellow-500 transition-all ease-in-out duration-500">{pos} -- {duration}</p>
+                    <p className="text-sky-950 group-hover:text-white transition-all ease-in-out duration-500">
                       {title}
                     </p>
                   </div>

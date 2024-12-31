@@ -76,11 +76,11 @@ body {
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-sky-900 font-generalsans;
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-sky-950 text-base font-generalsans;
   }
 
   .copy-container {
@@ -131,7 +131,7 @@ body {
   }
 
   .work-content_logo {
-    @apply rounded-sm w-16 h-16 p-1 bg-teal-900;
+    @apply rounded-sm w-16 h-16 p-0.5 bg-teal-900;
   }
 
   .work-content_bar {
