@@ -28,8 +28,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Vorleak Yek</p>
               <p className="grid-subtext">
-                With 2 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                With 2 years of experience in frontend and backend development, I’ve honed my skills in building dynamic and responsive websites. Currently, I volunteer as a full-stack developer at Hack for LA, collaborating on meaningful projects and continuously expanding my technical expertise. In my five-year role as a Quality Assurance Specialist II at McGraw Hill ALEKS, I’ve cultivated strong attention to detail and problem-solving skills within an agile team, ensuring every product meets the highest standards.
               </p>
             </div>
           </div>
@@ -42,8 +41,13 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+                Front-End: <span className='font-bold'>React, JavaScript, TypeScript, Tailwind</span>
+              </p>
+              <p className="grid-subtext">
+                Back-End: <span className='font-bold'>Node.js, Express, PostgreSQL, MongoDB</span>.
+              </p>
+              <p className="grid-subtext">
+                Learning: <span className='font-bold'>Python, Next.js, Three.js</span>.
               </p>
             </div>
           </div>
