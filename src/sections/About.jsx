@@ -36,7 +36,7 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/tech-stack-logo-img.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Tech Stack</p>
@@ -55,33 +55,50 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/education-img.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Education</p>
-              <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
-              </p>
+              <div className="grid-subtext">
+                <p className='font-bold'>
+                  Full Stack Web Development Program
+                </p>
+                <p className='italic'>
+                  LearningFuze
+                </p>
+                <p className='font-bold'>
+                  Master of Science in Applied Mathematics
+                </p>
+                <p className="italic">
+                  California State University, Long Beach
+                </p>
+                <p className='font-bold'>
+                  Bachelor of Science in Mathematics
+                </p>
+                <p className="italic">
+                  California State University, Long Beach
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid2.png" alt="grid-4" className="w-full sm:h-[276px] h-fit object-contain" />
+            <a href="https://www.proquest.com/openview/f2dcceec53a41f7010c856e22ce3632e/1?pq-origsite=gscholar&cbl=18750" target="_blank">
+              <img src="assets/csulb-particles.gif" alt="grid-4" className="w-full sm:h-[276px] h-fit object-contain" />
+            </a>
 
             <div>
               <p className="grid-headtext">Publication</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+                During my academic journey, I collaborated with Dr. Sun on a <a className="text-blue-600 dark:text-blue-500 hover:underline" href="https://www.proquest.com/openview/f2dcceec53a41f7010c856e22ce3632e/1?pq-origsite=gscholar&cbl=18750" target="_blank">thesis focused on fluid dynamics</a>, where I honed my skills in fluid simulation using MATLAB. This experience deepened my understanding of both the theoretical and computational aspects of solving incompressible Navier-Stokes equations, blending mathematical theory with practical coding applications.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-4">
+        {/* <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
@@ -98,13 +115,14 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Riverside, California and open to remote work and in-person work.</p>
+              <p className="grid-subtext">I&apos;m based in Riverside, California and open to remote work and in-person work. I love solving problems and building things through code. Programming isn&apos;t just my
+                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="xl:col-span-2 xl:row-span-3">
+        {/* <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
@@ -116,9 +134,9 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="xl:col-span-1 xl:row-span-2">
+        {/* <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
               src="assets/grid4.png"
@@ -134,7 +152,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
