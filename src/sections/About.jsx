@@ -86,7 +86,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <a href="https://www.proquest.com/openview/f2dcceec53a41f7010c856e22ce3632e/1?pq-origsite=gscholar&cbl=18750" target="_blank">
-              <img src="assets/csulb-particles.gif" alt="grid-4" className="w-full sm:h-[276px] h-fit object-contain" />
+              <img src="assets/csulb-particles.gif" alt="grid-3" className="w-full sm:h-[276px] h-fit object-contain" />
             </a>
 
             <div>
@@ -122,9 +122,9 @@ const About = () => {
           </div>
         </div> */}
 
-        {/* <div className="xl:col-span-2 xl:row-span-3">
+        <div className="xl:col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+            <img src="assets/grid3.png" alt="grid-4" className="w-full sm:h-[266px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
@@ -134,13 +134,13 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="xl:col-span-1 xl:row-span-2">
+        <div className="xl:col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
               src="assets/grid4.png"
-              alt="grid-4"
+              alt="grid-5"
               className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
 
@@ -152,7 +152,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

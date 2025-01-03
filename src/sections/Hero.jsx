@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 import Loading from '../components/Loading';
 import { calculateSizes } from '../constants/index.js';
 import ReactLogo from '../components/ReactLogo';
+import JavascriptLogo from '../components/JavascriptLogo.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import Button from '../components/Button.jsx';
 
@@ -81,6 +82,7 @@ const Hero = () => {
 
             <group>
               <ReactLogo position={sizes.reactLogoPosition} />
+              <JavascriptLogo position={sizes.reactLogoPosition} />
             </group>
 
             <ambientLight intensity={1} />
