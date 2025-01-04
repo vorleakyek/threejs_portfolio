@@ -3,8 +3,6 @@ import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
 
-//NOTE: Add education and publication
-
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
@@ -26,9 +24,36 @@ const About = () => {
             <img src="assets/my-profile.jpg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Vorleak Yek</p>
+              {/* <p className="grid-headtext">Hi, I’m Vorleak Yek</p> */}
+              <p className="grid-headtext">Full-Stack Developer Volunteer | QA Specialist</p>
               <p className="grid-subtext">
-                With 2 years of experience in frontend and backend development, I’ve honed my skills in building dynamic and responsive websites. Currently, I volunteer as a full-stack developer at Hack for LA, collaborating on meaningful projects and continuously expanding my technical expertise. In my five-year role as a Quality Assurance Specialist II at McGraw Hill ALEKS, I’ve cultivated strong attention to detail and problem-solving skills within an agile team, ensuring every product meets the highest standards.
+
+                <ul className="list-none">
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-500">
+                      ⭐
+                    </span>
+                    <span>
+                      <span className='font-semibold'>3+ years</span> of experience in <span className='font-semibold'>frontend and backend development</span>, specializing in dynamic and responsive web applications.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-500">
+                      ⭐
+                    </span>
+                    <span>
+                      <span className='font-semibold'>Full-Stack Developer Volunteer</span> at <span className='font-semibold'>Hack for LA</span>, collaborating on meaningful projects and continually expanding technical expertise.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-500">
+                      ⭐
+                    </span>
+                    <span>
+                      <span className='font-semibold'>5 years as a Quality Assurance Specialist II</span> at <span className='font-semibold'>McGraw Hill ALEKS</span>, excelling in <span className='font-semibold'>attention to detail</span> and <span className='font-semibold'>problem-solving</span> within an <span className='font-semibold'>agile team environment</span>.
+                    </span>
+                  </li>
+                </ul>
               </p>
             </div>
           </div>
@@ -37,7 +62,6 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/tech-stack-logo-img.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
-
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
@@ -48,6 +72,10 @@ const About = () => {
               </p>
               <p className="grid-subtext">
                 Learning: <span className='font-bold'>Python, Next.js, Three.js</span>.
+              </p>
+              <br />
+              <p className="grid-subtext">
+                Tools: <span className='font-bold'>Git, GitHub, Figma, Confluence, JIRA, JAWS, AWS</span>
               </p>
             </div>
           </div>
@@ -61,7 +89,7 @@ const About = () => {
               <p className="grid-headtext">Education</p>
               <div className="grid-subtext">
                 <p className='font-bold'>
-                  Full Stack Web Development Program
+                  Full-Stack Web Development Program
                 </p>
                 <p className='italic'>
                   LearningFuze
@@ -124,13 +152,11 @@ const About = () => {
 
         <div className="xl:col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid3.png" alt="grid-4" className="w-full sm:h-[266px] h-fit object-contain" />
-
+            <img src="assets/workstation.png" alt="grid-4" className="w-full sm:h-[266px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                I’m passionate about solving problems and building impactful solutions through code. Over the past three years, I’ve dedicated my evenings to web development—exploring new technologies, honing my skills, and bringing ideas to life with dynamic applications. Every line of code feels like a step toward creating something meaningful, driven by the belief that technology can truly make a difference.
               </p>
             </div>
           </div>
@@ -145,11 +171,40 @@ const About = () => {
             />
 
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">vorleakyek@gmail.com</p>
+
+              <p className="grid-headtext">What I Bring to the Table</p>
+              <p className="grid-subtext">
+                <ul className='list-none'>
+                  <li className='flex items-start gap-2'>
+                    <span className="text-yellow-500">&#10148;</span>
+                    <span>
+                      <span className='font-semibold'>5+ years of Quality Assurance experience</span> — Ensuring products meet the highest standards of functionality and reliability.
+                    </span>
+                  </li>
+                  <li className='flex items-start gap-2'>
+                    <span className="text-yellow-500">&#10148;</span>
+                    <span>
+                      <span className='font-semibold'>3+ years of Web Development experience</span> — Building dynamic, user-friendly applications with modern technologies.
+                    </span>
+                  </li>
+                  <li className='flex items-start gap-2'>
+                    <span className="text-yellow-500">&#10148;</span>
+                    <span>
+                      <span className='font-semibold'> User-Centric Mindset</span> — Advocating for intuitive UI/UX design and seamless webpage interactions from an end-user perspective.
+                    </span>
+                  </li>
+                </ul>
+              </p>
+
+              <div>
+                <p className="grid-subtext text-center font-bold pt-7">Contact me</p>
+                <div className="copy-container" onClick={handleCopy}>
+                  <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+                  <p className="lg:text-2xl md:text-xl font-medium text-teal-900">vorleakyek@gmail.com</p>
+                </div>
               </div>
+
+
             </div>
           </div>
         </div>
