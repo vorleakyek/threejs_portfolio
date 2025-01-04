@@ -81,6 +81,50 @@ const About = () => {
           </div>
         </div>
 
+        <div className="xl:col-span-1 xl:row-span-3">
+          <div className="grid-container">
+            <img
+              src="assets/groupwork.png"
+              alt="grid-5"
+              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+            />
+
+            <div className="space-y-2">
+              <p className="grid-headtext">What I Bring to the Table</p>
+              <p className="grid-subtext">
+                <ul className='list-none'>
+                  <li className='flex items-start gap-2'>
+                    <span className="text-yellow-500">&#10148;</span>
+                    <span>
+                      <span className='font-semibold'>5+ years of Quality Assurance experience</span> — Ensuring products meet the highest standards of functionality and reliability.
+                    </span>
+                  </li>
+                  <li className='flex items-start gap-2'>
+                    <span className="text-yellow-500">&#10148;</span>
+                    <span>
+                      <span className='font-semibold'>3+ years of Web Development experience</span> — Building dynamic, user-friendly applications with modern technologies.
+                    </span>
+                  </li>
+                  <li className='flex items-start gap-2'>
+                    <span className="text-yellow-500">&#10148;</span>
+                    <span>
+                      <span className='font-semibold'> User-Centric Mindset</span> — Advocating for intuitive UI/UX design and seamless webpage interactions from an end-user perspective.
+                    </span>
+                  </li>
+                </ul>
+              </p>
+
+              <div>
+                <p className="grid-subtext text-center font-bold pt-7">Contact me</p>
+                <div className="copy-container" onClick={handleCopy}>
+                  <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+                  <p className="lg:text-2xl md:text-xl font-medium text-teal-900">vorleakyek@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="assets/education-img.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
@@ -107,6 +151,18 @@ const About = () => {
                   California State University, Long Beach
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="xl:col-span-1 xl:row-span-3">
+          <div className="grid-container">
+            <img src="assets/workstation.png" alt="grid-4" className="w-full sm:h-[266px] h-fit object-contain" />
+            <div>
+              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-subtext">
+                I’m passionate about solving problems and building impactful solutions through code. Over the past three years, I’ve dedicated my evenings to web development—exploring new technologies, honing my skills, and bringing ideas to life with dynamic applications. Every line of code feels like a step toward creating something meaningful, driven by the belief that technology can truly make a difference.
+              </p>
             </div>
           </div>
         </div>
@@ -149,65 +205,6 @@ const About = () => {
             </div>
           </div>
         </div> */}
-
-        <div className="xl:col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src="assets/workstation.png" alt="grid-4" className="w-full sm:h-[266px] h-fit object-contain" />
-            <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I’m passionate about solving problems and building impactful solutions through code. Over the past three years, I’ve dedicated my evenings to web development—exploring new technologies, honing my skills, and bringing ideas to life with dynamic applications. Every line of code feels like a step toward creating something meaningful, driven by the belief that technology can truly make a difference.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img
-              src="assets/grid4.png"
-              alt="grid-5"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
-            />
-
-            <div className="space-y-2">
-
-              <p className="grid-headtext">What I Bring to the Table</p>
-              <p className="grid-subtext">
-                <ul className='list-none'>
-                  <li className='flex items-start gap-2'>
-                    <span className="text-yellow-500">&#10148;</span>
-                    <span>
-                      <span className='font-semibold'>5+ years of Quality Assurance experience</span> — Ensuring products meet the highest standards of functionality and reliability.
-                    </span>
-                  </li>
-                  <li className='flex items-start gap-2'>
-                    <span className="text-yellow-500">&#10148;</span>
-                    <span>
-                      <span className='font-semibold'>3+ years of Web Development experience</span> — Building dynamic, user-friendly applications with modern technologies.
-                    </span>
-                  </li>
-                  <li className='flex items-start gap-2'>
-                    <span className="text-yellow-500">&#10148;</span>
-                    <span>
-                      <span className='font-semibold'> User-Centric Mindset</span> — Advocating for intuitive UI/UX design and seamless webpage interactions from an end-user perspective.
-                    </span>
-                  </li>
-                </ul>
-              </p>
-
-              <div>
-                <p className="grid-subtext text-center font-bold pt-7">Contact me</p>
-                <div className="copy-container" onClick={handleCopy}>
-                  <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                  <p className="lg:text-2xl md:text-xl font-medium text-teal-900">vorleakyek@gmail.com</p>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
