@@ -169,7 +169,7 @@ export const myProjects = [
       'React, JavaScript(ES6), CSS3',
     href: 'https://vorleakyek.github.io/tic-tac-toe/',
     texture: '/textures/project/tic-tac-toe.mp4',
-    logo: '/assets/project-logo3.png',
+    logo: '/assets/tic-tac-toe-logo.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -202,11 +202,13 @@ export const myProjects = [
     subdesc:'HTML5, CSS3, JavaScript(ES6)',
     href: 'https://vorleakyek.github.io/Basic_calculator/',
     texture: '/textures/project/basic-calculator.mp4',
-    logo: '/assets/project-logo4.png',
+    logo: '/assets/calculator-logo.png',
     logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      backgroundColor: '#60f5a1',
+      background:
+        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      border: '0.2px solid rgba(208, 213, 221, 1)',
+      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
     spotlight: '/assets/spotlight4.png',
     tags: [
