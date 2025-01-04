@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 import Loading from '../components/Loading';
 import { calculateSizes } from '../constants/index.js';
 import ReactLogo from '../components/ReactLogo';
+import JavascriptLogo from '../components/JavascriptLogo.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import Button from '../components/Button.jsx';
 
@@ -19,43 +20,6 @@ const Hero = () => {
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
-  // const x = useControls('HackerRoom', {
-  //   positionX: {
-  //     value: 2.5,
-  //     min: -10,
-  //     max: 10
-  //   },
-  //   positionY: {
-  //     value: 2.5,
-  //     min: -10,
-  //     max: 10
-  //   },
-  //   positionZ: {
-  //     value: 2.5,
-  //     min: -10,
-  //     max: 10
-  //   },
-  //   rotationX:{
-  //     value:0,
-  //     min:-10,
-  //     max:10
-  //   },
-  //   rotationY: {
-  //     value: 0,
-  //     min: -10,
-  //     max: 10
-  //   },
-  //   rotationZ: {
-  //     value: 0,
-  //     min: -10,
-  //     max: 10
-  //   },
-  //   scale: {
-  //     value: 1,
-  //     min: 0.1,
-  //     max: 10
-  //   }
-  // })
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
@@ -71,16 +35,14 @@ const Hero = () => {
 
           <Suspense fallback={<Loading />}>
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
-            {/* <Model
-              scale={10}
-              position={[4.1,-9.1, -5.5]}
-              rotation={[-5.6,0.6,-6.3]} /> */}
+
             <HeroCamera isMobile={isMobile}>
               <Model scale={sizes.deskScale} position={sizes.deskPosition} rotation={[-5.6, 0.6, -6.3]} />
             </HeroCamera>
 
             <group>
               <ReactLogo position={sizes.reactLogoPosition} />
+              <JavascriptLogo position={sizes.reactLogoPosition} />
             </group>
 
             <ambientLight intensity={1} />
